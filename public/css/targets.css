@@ -1,0 +1,101 @@
+body{
+    background: #FF8a5c;
+    font-family: 'Poppins',
+    sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .quotes {
+    width: 20vw;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .quotes .box {
+    position: relative;
+    width: 19vw;
+    height: 30vh;
+    min-height: 220px;
+    background: #f2f2f2;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 15% 15% 15% 15%;
+    left: 170%;
+    top: -110%;
+  }
+  .quotes .box2{
+    left: 170%;
+    top: -120%;
+  }
+
+  .quotes .box::before {
+    content: '\201C';
+    position: absolute;
+    top: -10px;
+    left: 19px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    pointer-events: none;
+  }
+  
+  .quotes .box::after {
+      margin: 40px;
+    content: '\201D';
+    position: absolute;
+    bottom: -25%;
+    right: -10%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    filter: invert(1);
+    pointer-events: none;
+  }
+  
+  .quotes .box p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .quotes .box h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+  }
+  
+  .quotes .box:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+  
+  .quotes .box.box1:hover{
+    opacity: 1;
+    background: #FF8a5c;
+  background: -moz-linear-gradient(-45deg, #a194a1 15%, #2b94e5 100%);
+  background: -webkit-linear-gradient(-45deg, #dabc13 15%,#2b94e5 100%);
+  background: -moz-linear-gradient(-45deg, #a194a1 15%, #2b94e5 100%);
+  background: linear-gradient(135deg, #a194a1 15%,#2b94e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+  }
+  

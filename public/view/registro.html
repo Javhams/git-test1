@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracion</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/targets.css">
+    <link rel="stylesheet" href="../css/targets1.1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="registro">
+        <div class="container">
+            <div class="right"> 
+            <svg viewBox="0 0 350 300">
+            </svg>
+            <div class="form">
+              <label type="text" required>Nombre</label>
+              <input class="nombre" id="nombre">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido">
+              <label type="text" >Telefono</label>
+              <input class="Number" type="number" maxlength="9" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" >
+              <label type="text" required>Correo</label>
+              <input class="text" id="email">
+              <label for="pais">Pais</label>
+              <input type="text" id="address">
+              <label for="ciudad">Ciudad</label>
+              <input type="text" >
+              <label for="casa">Casa</label>
+              <input type="text" >
+              <br>
+              <p><a class="with-arrow" onclick="animar()" >REGISTRAR <i class="icon-arrow-right"></i></a>
+                <i class="far fa-question-circle" id="icono"></i>
+            </div>
+        </div>
+    </div>
+    <! -- Ahora creara nueva targetas de estilo que con llevan a unas rutas de informacion--> 
+    <div class= "quotes">
+        <div  class="card">
+            <div class="box box1">
+                <p>
+                    En nuestro programa podremos ofrecerte multitud de herramientas
+                     en las que te pueden ayudar por muchas razones en las que puedes desarrollar
+                     una de ellas estarán representadas en las siguientes ventanas.
+                </p>
+                <h2>Desarrollo</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

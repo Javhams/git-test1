@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Inicio</title>
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
+      
+    </head>
+    <body>
+      <div class="page"> 
+        <div class="container">
+          <div class="left">
+            <div class="login">Inicio</div>
+            <div class="eula">Programa Gestor de datos, consiste en poder recrear una modalidad de multiples herramientas en ayuda a tus actividades.</div>
+          </div>
+          <div class="right">
+            <svg viewBox="0 0 320 300">
+            </svg>
+            <div class="form">
+              <label type="text" required>Email</label>
+              <input class="correo" id="email">
+              <label for="password">Password</label>
+              <input type="password" id="password">
+              <p><a class="with-arrow" onclick="animar()" >Ingresar <i class="icon-arrow-right"></i></a>
+              </p>
+              <a><button type="submit" class="registro" onclick="window.location.href='/view/registro.html'">Registrar</button></a>
+             </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/animacion.js"></script>
+    </body>
+</html>
